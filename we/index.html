@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="navbarDiv"></div>
+    <input type="text"  id="inpu">
+    <div id="screenDiv"></div>
+   
+    
+</body>
+<script type="module">
+    import navbar from './navbar.js'
+    import { main,appendFunc } from './main.js'
+    // console.log(navbar)
+    let navBarContainer= document.getElementById("navbarDiv")
+    navBarContainer.innerHTML=navbar()
+    let containerDiv=document.getElementById("screenDiv")
+    let inputt=document.getElementById("inpu").value;
+
+    // let res=await main('https://fakestoreapi.com/products/category/jewelery')
+    // appendFunc(res,containerDiv)
+    document.getElementById("inpu").addEventListener('input',main())
+
+
+
+
+</script>
+</html>

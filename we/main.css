@@ -1,0 +1,16 @@
+#navbar{
+    display:flex ;
+    padding-left:5% ;
+    padding-right: 5%;
+    border:solid black 1px ;
+    justify-content: space-between;
+    color: white;
+    background-color:aqua;
+    border-radius: 20px;
+}
+#options{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+}
